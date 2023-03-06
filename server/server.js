@@ -12,6 +12,8 @@ app.use(cors());
 
 // Routes
 app.use("/api/users", require("./routes/api/users"));
+app.use("/api/bug", require("./routes/api/bug"));
+app.use("/api/status", require("./routes/api/status"));
 
 // Connect to MongoDB
 // const mongouri = "mongodb + srv://boletorishabh1999:5v2xkelqNtzxigOf@cluster0.eec441u.mongodb.net/?retryWrites=true&w=majority";
