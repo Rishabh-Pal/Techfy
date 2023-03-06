@@ -11,16 +11,21 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
+<<<<<<< HEAD
     "bootstrap": "^5.2.3",
     "draft-js": "^0.11.7",
     "draft-js-export-html": "^1.4.1",
     "formik": "^2.2.9",
     "html-to-draftjs": "^1.5.0",
     "moment": "^2.29.4",
+=======
+    "eslint-plugin-react": "^7.32.2",
+>>>>>>> e2c43a62bc35ad84191a029d75353112e4ca56af
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-cookies": "^0.1.1",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-google-font-loader": "^1.1.0",
     "react-moment": "^1.1.3",
     "react-redux": "^8.0.5",
@@ -31,6 +36,10 @@
     "redux": "^4.2.1",
     "web-vitals": "^2.1.4",
     "yup": "^1.0.2"
+=======
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+>>>>>>> e2c43a62bc35ad84191a029d75353112e4ca56af
   },
   "scripts": {
     "start": "react-scripts start",
