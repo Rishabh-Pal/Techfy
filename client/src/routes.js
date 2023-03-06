@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import MainLayout from './hoc/mainLayout';
 import GoogleFontLoader from 'react-google-font-loader';
 import Home from './components/Home/home.js';
@@ -11,9 +11,9 @@ const Router = () => {
             <Headers />
             <>
                 <MainLayout>
-                    <Routes>
+                    <Switch>
                         <Route path="/" component={Home} />
-                    </Routes>
+                    </Switch>
                 </MainLayout>
             </>
 

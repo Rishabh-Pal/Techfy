@@ -26,7 +26,7 @@ const SideDrawer = () => {
                 >
                     <TextField
                         id="outlined-basic"
-                        label="Search movie"
+                        label="Search Bugs"
                         variant='outlined'
                     />
 

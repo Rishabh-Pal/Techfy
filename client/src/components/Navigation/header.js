@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import SideDrawer from './sideNavigation'
 
 const Header = (props) => {
@@ -19,4 +19,4 @@ const Header = (props) => {
     )
 }
 
-export default Header;
+export default withRouter(Header);
