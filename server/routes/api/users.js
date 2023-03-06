@@ -57,13 +57,13 @@ router.post("/login", async (req, res) => {
     }
 });
 
-router.get('/login', (req, res) => {
-    try {
-        res.status(200).json({ msg: "I have loged in." });
-    } catch (err) {
-        console.log(err);
-        res.status(404).json({ msg: err });
-    }
-})
+// router.get('/login', (req, res) => {
+//     try {
+//         res.status(200).json({ msg: "I have logged in." });
+//     } catch (err) {
+//         console.log(err);
+//         res.status(404).json({ msg: err });
+//     }
+// })
 
 module.exports = router;
