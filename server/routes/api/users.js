@@ -49,8 +49,9 @@ router.post("/login", async (req, res) => {
 
         // Generate JWT token
         const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: "1d" });
+        const doc = await User.save();
 
-        res.status(200).json({ token });
+        res.cookie('x-access-token', token).status(200).send(doc);
     } catch (err) {
         console.error(err);
         res.status(500).json({ msg: "Server error" });
