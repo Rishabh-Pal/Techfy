@@ -1,10 +1,11 @@
-import Reg from "./Commponents/Registration/Reg";
+import Reg from "./components/Register/Reg";
 
 const App=()=>{
 
 
   return(
     <>
+   
     <Reg></Reg>
     </>
     
