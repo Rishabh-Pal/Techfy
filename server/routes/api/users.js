@@ -5,9 +5,6 @@ const jwt = require("jsonwebtoken");
 const User = require("../../models/user");
 const { JWT_SECRET } = process.env;
 
-// const { JWT_SECRET}='Thisistesting';
-
-
 // Register a user
 router.post("/register", async (req, res) => {
     try {
@@ -51,7 +48,7 @@ router.post("/login", async (req, res) => {
         }
 
         // Generate JWT token
-        const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: "1d" });
+        const token = jwt.sign({ userId: user._id },JWT_SECRET, { expiresIn: "1d" });
         const doc = await User.save();
 
         res.cookie('x-access-token', token).status(200).send(doc);
@@ -60,5 +57,14 @@ router.post("/login", async (req, res) => {
         res.status(500).json({ msg: "Server error" });
     }
 });
+
+router.get('/allusers',async (req,res)=>{
+    try{
+        const users=await User.find({})
+        res.send(users)
+    }catch(err){
+        res.status(500).send()
+    }
+})
 
 module.exports = router;
