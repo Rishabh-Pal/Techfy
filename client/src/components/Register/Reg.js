@@ -4,11 +4,11 @@ function Reg(){
 
 
     return(
-        <div className='flex justify-center items-center h-screen bg-green-600'>
+        <div className='flex justify-center items-center h-screen bg-sky-600'>
 
           <div className="w-96 p-6 shadow-lg bg-white rounded-md">
             
-          <h1 className="text-3xl block text-center font-semibold"><i class="fa-solid fa-user"></i>  Registration</h1>
+          <h1 className="text-3xl block text-center font-semibold"><i class="fa-solid fa-user-plus"></i>  Registration</h1>
 
           <hr className="mt-3"></hr>
 
