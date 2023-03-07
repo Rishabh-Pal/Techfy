@@ -1,7 +1,7 @@
 {
   "name": "techfy",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
     "server": "nodemon server/server.js",
@@ -27,5 +27,14 @@
     "mongoose-aggregate-paginate-v2": "^1.0.6",
     "nodemailer": "^6.9.1",
     "validator": "^13.9.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishabh-Pal/Techfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rishabh-Pal/Techfy/issues"
+  },
+  "homepage": "https://github.com/Rishabh-Pal/Techfy#readme"
 }
