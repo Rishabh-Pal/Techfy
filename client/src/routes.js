@@ -4,8 +4,9 @@ import MainLayout from './hoc/mainLayout';
 import GoogleFontLoader from 'react-google-font-loader';
 import Home from './components/Home/home.js';
 import Headers from './components/Navigation/header.js';
+import Contact from './components/Contect';
 
-const Router = () => {
+const Routes = () => {
     return (
         <BrowserRouter>
             <Headers />
@@ -13,6 +14,7 @@ const Router = () => {
                 <MainLayout>
                     <Switch>
                         <Route path="/" component={Home} />
+                        <Route path="/contact" component={Contact} />
                     </Switch>
                 </MainLayout>
             </>
@@ -25,4 +27,4 @@ const Router = () => {
     )
 }
 
-export default Router;
+export default Routes;
