@@ -32,8 +32,10 @@ function Reg(){
             
             </div> 
           
-            <div className="mt-5"></div>
+            <div className="mt-5">
+             
             <button type="submit"  class="border-2 border-indigo-700 bg-indigo-700 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-indigo-700 font-semibold"><i class="fa-solid fa-right-to-bracket"></i>  Sign Up</button>
+            </div>
           </form>
         
           
